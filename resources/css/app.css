@@ -1,8 +1,42 @@
 @import 'tailwindcss';
 
-@source '../views';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+/* @theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+} */
+:root {
+    --tenant-primary: #FEC203;
+    --tenant-primary-hover: #E19600;
+
+    --tenant-background: #121212;
+    --tenant-surface: #191D23;
+
+    --tenant-text: #F9F9F9;
+
+    --tenant-border: #CFCFCF;
+
+    --tenant-secondary: #6D757D;
+
+    --tenant-danger: #EA868F;
+}
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --color-primary: var(--tenant-primary);
+    --color-primary-hover: var(--tenant-primary-hover);
+
+    --color-background: var(--tenant-background);
+    --color-surface: var(--tenant-surface);
+
+    --color-text: var(--tenant-text);
+
+    --color-border: var(--tenant-border);
+
+    --color-secondary: var(--tenant-secondary);
+
+    --color-danger: var(--tenant-danger);
 }
