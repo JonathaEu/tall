@@ -10,10 +10,10 @@
     @if($label)
     <label
         for="{{ $name }}"
-        class="absolute left-3 top-2 text-xs text-border bg-surface px-1 pointer-events-none">
+        class="absolute left-3 top-2 text-xs text-border bg-superficie px-1 pointer-events-none">
         {{ $label }}
         @if($required)
-        <span class="text-primary">*</span>
+        <span class="text-primario">*</span>
         @endif
     </label>
     @endif
@@ -22,6 +22,7 @@
         id="{{ $name }}"
         name="{{ $name }}"
         type="{{ $type }}"
+        {{ $required ? 'required' : '' }}
         {{ $disabled }}
         {{ $attributes->class([
             'w-full',
@@ -29,14 +30,14 @@
             'pt-5',
             'px-4',
             'rounded-lg',
-            'bg-surface',
+            'bg-superficie',
             'text-text',
             'border',
             $errors->has($name)
                 ? 'border-danger'
-                : 'border-border',
+                : 'border-borda',
             'focus:outline-none',
-            'focus:border-primary',
+            'focus:border-primario',
         ]) }}>
 
 </div>

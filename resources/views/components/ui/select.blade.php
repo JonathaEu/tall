@@ -15,7 +15,7 @@
         {{ $label }}
 
         @if($required)
-        <span class="text-primary">*</span>
+        <span class="text-primario">*</span>
         @endif
     </label>
     @endif
@@ -28,11 +28,11 @@
         'h-12',
         'px-4',
         'rounded-lg',
-        'bg-surface',
+        'bg-superficie',
         'text-text',
         'border',
-        'border-border',
-        'focus:border-primary',
+        'border-borda',
+        'focus:border-primario',
         'focus:outline-none',
     ]) }}>
         @foreach($options as $value => $text)

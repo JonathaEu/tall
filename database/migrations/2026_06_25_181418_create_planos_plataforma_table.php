@@ -11,14 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('telas', function (Blueprint $table) {
+        Schema::create('planos_plataforma', function (Blueprint $table) {
             $table->ulid('id')->primary()->unique();
-            $table->foreignUlid('modulo_id')->nullable()->constrained();
-            $table->foreignUlid('permission_id')->nullable()->constrained();
-            $table->string('nome');
-            $table->string('rota_modulo_tela');
-            $table->string('icone');
-            $table->integer('ordenacao');
+            $table->string('plano');
+            $table->decimal('preco', 11, 2);
             $table->timestamps();
         });
     }
@@ -28,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('telas');
+        Schema::dropIfExists('planos_plataforma');
     }
 };

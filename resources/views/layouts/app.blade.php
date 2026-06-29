@@ -11,10 +11,10 @@
     @livewireStyles
 </head>
 
-<body class="bg-surface">
+<body class="bg-bg">
     <div x-data="{ sidebarCollapsed: false }" class="flex relative">
 
-        <!-- <livewire:shared.sidebar /> -->
+        <livewire:shared.sidebar />
 
         <button
             x-show="sidebarCollapsed"

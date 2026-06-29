@@ -27,7 +27,7 @@
             x-transition:leave="ease-in duration-200"
             x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
             x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-            class="relative transform overflow-hidden rounded-xl bg-surface text-left shadow-xl transition-all w-full max-w-2xl p-6 my-8">
+            class="relative transform overflow-hidden rounded-xl bg-superficie text-left shadow-xl transition-all w-full max-w-2xl p-6 my-8">
             <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-4">
                 <h2 class="text-xl font-semibold text-text">
                     {{ $title }}

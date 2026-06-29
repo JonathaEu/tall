@@ -21,11 +21,11 @@
             'min-h-32',
             'p-4',
             'rounded-lg',
-            'bg-surface',
+            'bg-superficie',
             'text-text',
             'border',
-            'border-border',
-            'focus:border-primary',
+            'border-borda',
+            'focus:border-primario',
             'focus:outline-none',
         ]) }}></textarea>
 

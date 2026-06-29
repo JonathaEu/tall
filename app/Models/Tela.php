@@ -8,13 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * @property string $nome
- * @property string $modulo_tela_rota
+ * @property string $rota_modulo_tela
  * @property string $icone
  * @property string $modulo_id
  * @property string $permission_id
  * @property int $ordenacao
  */
-#[Fillable(['nome', 'modulo_tela_rota', 'icone', 'modulo_id', 'permission_id', 'ordenacao'])]
+#[Fillable(['nome', 'rota_modulo_tela', 'icone', 'modulo_id', 'permission_id', 'ordenacao'])]
 class Tela extends Model
 {
     use HasUlids;

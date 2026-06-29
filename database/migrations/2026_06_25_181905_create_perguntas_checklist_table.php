@@ -11,13 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('telas', function (Blueprint $table) {
+        Schema::create('perguntas_checklists', function (Blueprint $table) {
             $table->ulid('id')->primary()->unique();
-            $table->foreignUlid('modulo_id')->nullable()->constrained();
-            $table->foreignUlid('permission_id')->nullable()->constrained();
-            $table->string('nome');
-            $table->string('rota_modulo_tela');
-            $table->string('icone');
+            $table->foreignUlid('checklist_id')->constrained();
+            $table->string('pergunta');
+            $table->enum('tipo_pergunta', ['texto', 'boolean', 'avaliacao', 'intervalo']);
+            $table->string('pergunta_snapshot');
             $table->integer('ordenacao');
             $table->timestamps();
         });
@@ -28,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('telas');
+        Schema::dropIfExists('perguntas_checklists');
     }
 };

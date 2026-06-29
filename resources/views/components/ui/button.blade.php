@@ -7,13 +7,13 @@
 
 $variants = [
 'primario' => '
-bg-primary
-text-surface
-hover:bg-primary-hover
+bg-primario
+text-superficie
+hover:bg-primario-hover
 ',
 
 'secundario' => '
-bg-secondary
+bg-secundario
 text-white
 hover:brightness-110
 ',
